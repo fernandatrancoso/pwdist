@@ -8,6 +8,7 @@ filepwdist: Same but comparing peptides of one file to peptides of another file.
 Based on this program (https://sourceforge.net/projects/granthamdist/) made by Tobias Lenz. 
 
 pwdist usage: > python3 pwisedist.py distancematrix.txt fastafile 
+
 filepwdist usage: > python3 filepwdist.py distancematrixfile fastafile1 fastafile2
 
 !!!To run you must have python3, numpy, and biopython installed. 
