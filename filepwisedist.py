@@ -16,12 +16,12 @@ mafile = sys.argv[1]
 n = len(aaList)
 data = np.loadtxt(mafile, dtype = 'float', delimiter='\t', skiprows = 1, usecols = (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20))
 
-resultsfile = open('resultsfile.txt', 'w')
+resultsfile = open('filepwisedistresults.txt', 'w')
 
 records = list(SeqIO.parse(open(sys.argv[2], 'r'), "fasta"))
 records2 = list(SeqIO.parse(open(sys.argv[3], 'r'), "fasta"))
 for line1 in range(len(records)):
-    for sequ in range(line1, (len(records2))):
+    for sequ in range((len(records2))):
         sumdist = 0 
         for i in range (min(len(records[line1].seq), len(records2[sequ].seq))):
             char_a = (records[line1].seq)[i]
