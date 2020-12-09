@@ -3,13 +3,18 @@ My first script!!
 
 
 pwdist: Script to calculate average pairwise distance between peptide sequences based on a distance matrix and a fasta file. 
+
 filepwdist: Same but comparing peptides of one file to peptides of another file.
+
+list_sbpwise: Same but peptide sequences dont have to be a fasta file, just a simple file with each line being one peptide sequence
 
 Based on this program (https://sourceforge.net/projects/granthamdist/) made by Tobias Lenz. 
 
 pwdist usage: > python3 pwisedist.py distancematrix.txt fastafile 
 
 filepwdist usage: > python3 filepwdist.py distancematrixfile fastafile1 fastafile2
+
+list_sbpwise usage: > python3 list_sbpwise.py distancematrix.txt peptidesfile 
 
 !!!To run you must have python3, numpy, and biopython installed. 
 
