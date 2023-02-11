@@ -13,7 +13,7 @@ matrixfile = open(sys.argv[1], 'r')
 aaList = matrixfile.readline().split()
 mafile = sys.argv[1]
 n = len(aaList)
-data = np.loadtxt(mafile, dtype = 'float', delimiter='\t', skiprows = 1, usecols = (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20))
+data = np.loadtxt(mafile, dtype = 'float', delimiter='\t', skiprows = 1, usecols = (1:20))
 
 resultsfile = open('resultsfile.txt', 'w')
 
